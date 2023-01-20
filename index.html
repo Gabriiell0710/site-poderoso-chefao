@@ -11,6 +11,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="./src/css/reset.css">
+
+        <link rel="stylesheet" href="./src/css/estilos.css">
+
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+
         <title>O Poderoso Chefão</title>
     </head>
     <body>
@@ -27,20 +33,25 @@
             </a>
             <nav>
                 <ul class="menu">
-                    <li>Home</li>
-                    <li>Detalhes</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Detalhes</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container">
             <div class="informacoes">
                 <img class="imagem-titulo" src="./src/imagens/nome.png" alt="imagem do título do filme">
-                <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam a ipsa nemo.
-                    Perferendis itaque tenetur reiciendis explicabo ea ab fuga dolores recusandae, corrupti culpa nihil
-                    natus temporibus et! Minima, deserunt.</p>
+                <p class="descricao">Connie, a filha de Don Corleone, está se casando. Como um senhor feudal, ele recebe os cumprimentos e promessas de lealdade dos parentes e clientes. Os outros filhos estão presentes: o sangue quente Sony, o mais velho que irá substitui-lo, e Fredo, que não se adequa aos negócios da família. O preferido é o mais novo, Michael, que voltou como herói da II Guerra Mundial e não tem nenhum envolvimento com a máfia. Porém, devido à incapacidade do pai, se vê forçado a assumir a liderança da família, contrariando o que o pai queria para seu futuro.</p>
                 <button class="botao-trailer">Veja o trailer</button>
             </div>
             <img class="dom-corleone" src="./src/imagens/dom-corleone-editado.png" alt="">
+
+            <div class="modal">
+                <div class="conteudo-modal">
+                    <span class="fechar-modal">X</span>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=SaHZHU-44XA&list=LL&index=1" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
     </body>
 </html>
