@@ -14,9 +14,6 @@ body{
     width: 65px;
 }
 
-*{
-    background-color: black;
-}
 
 .cabecalho .menu{
     display: flex;
@@ -35,18 +32,16 @@ body{
 }
 
 .cabecalho nav  a:hover{
-    background-color: red;
+    background-color: #d5011d;
 }
 
 .container{
-    background-color: aqua;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: calc(100vh - 200px);
-    
 }
 
 .container .informacoes{
@@ -57,5 +52,55 @@ body{
 
 .container .descricao{
     color: white;
-    padding-left: 40px;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 22px;
+}
+
+.elenco{
+    max-width: 1440px;
+    padding-right: 80px;
+    width: 370px;
+}
+
+.estatuetas{
+    display: flex;
+    padding-left: 170px;
+    padding-top: 50px;
+}
+
+.estatuetas .frase-oscar{
+    color: white;
+    padding-top: 85px;
+    padding-right: 10px;
+}
+
+.oscar{
+    width: 180px;
+}
+
+.imagem-fundo{
+    background-color: #000000;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imagem-fundo .imagem{
+    height: 100vh;
+    width: 72vw;
+}
+
+.imagem-fundo::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9724089464887518) 43%, rgba(0,0,0,1) 100%);    
 }
